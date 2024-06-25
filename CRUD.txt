@@ -1,0 +1,21 @@
+
+// For creating a table
+CREATE TABLE person(
+	id INT,
+	name VARCHAR(100),
+	city VARCHAR(100)
+)
+
+
+// Insert Values
+INSERT INTO person VALUES(1,'Nazil','Vadodara');
+    OR
+INSERT INTO person(id,name,city) VALUES(1,'Nazil','Vadodara');
+
+
+// To insert multiple values 
+INSERT INTO person 
+	VALUES
+	(101,'Raju','Delhi'),
+	(102,'Sham','Mumbai'),
+	(103,'Paul','Chennai');
