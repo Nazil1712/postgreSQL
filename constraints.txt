@@ -1,0 +1,13 @@
+// A constraints in POSTGRE is " a rule applied to a column"
+
+// Primary Key (slide no - 53 , https://www.canva.com/design/DAGGQI3jsQo/aZYZy0_PSEFsRfFUMNZx2g/edit)
+
+// We can multiple constraints in single Query
+
+
+// constraints are :
+1 ) Primary Key
+2 ) Not null
+3 ) Default
+4 ) Serial
+5 ) Unique
