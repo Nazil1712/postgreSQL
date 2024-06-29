@@ -19,3 +19,21 @@ INSERT INTO person
 	(101,'Raju','Delhi'),
 	(102,'Sham','Mumbai'),
 	(103,'Paul','Chennai');
+
+
+// Reading data
+select * from person;
+select id from person; // select column
+select id, name from person; // select multiple columns
+
+
+// Updating the data
+UPDATE person 
+    SET city = 'Banglore' 
+    WHERE id=101;
+
+
+// Deleting the data
+DELETE FROM person WHERE id = 104
+
+
