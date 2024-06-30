@@ -1,0 +1,30 @@
+// Create Querys 
+
+CREATE TABLE employees (
+	emp_id SERIAL PRIMARY KEY,
+	fname VARCHAR(50) NOT NULL,
+	lname VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL UNIQUE,
+	dept VARCHAR(50),
+	salary DECIMAL(10,2) DEFAULT 30000.00,
+	hire_date DATE NOT NULL DEFAULT CURRENT_DATE
+)
+
+emp_id,fname ,lname ,email ,dept ,salary,hire_date
+
+
+// Insert
+INSERT INTO employees (fname,lname,email,dept) 
+	VALUES
+	('Nazil','Dhalwala','nazil.dhalwala@example.com','IT');
+
+
+
+// To see the current value of "SERIAL" 
+SELECT currval('employees_columnNAME_seq');
+SELECT currval('employees_emp_id_seq');
+
+// To set that => SELECT setval('employees_emp_id_seq',10);
+# here 10 represents that 10 is used and now you(SERIAL) have to start from 11
+
+
