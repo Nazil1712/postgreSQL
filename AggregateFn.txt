@@ -16,7 +16,7 @@ select AVG(salary) from employees
 
 // 4 ) MIN(Column_name)
 select MIN(salary) from employees
-
+    
 // 5 ) MAX(Column_name)
 select MAX(salary) from employees
 

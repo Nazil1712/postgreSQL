@@ -1,0 +1,3 @@
+select dept from employees GROUP BY dept
+select dept, COUNT(fname) from employees GROUP BY dept;
+select dept, SUM(salary) from employees GROUP BY dept
