@@ -63,4 +63,4 @@ select * from employees where dept LIKE '__'; (double underscore _)
 
 
 => select employees whose fname's second character is 'a'
- 
+select * from employees where fname LIKE '_a%'; 

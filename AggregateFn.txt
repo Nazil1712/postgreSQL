@@ -1,0 +1,22 @@
+- count
+- sum
+- Avg
+- Max
+- Min
+
+
+// 1) COUNT(Column_name)
+select COUNT(emp_id) from employees
+
+// 2) SUM(Column_name)
+select SUM(salary) from employees   
+
+// 3) AVG(Column_name)
+select AVG(salary) from employees
+
+// 4 ) MIN(Column_name)
+select MIN(salary) from employees
+
+// 5 ) MAX(Column_name)
+select MAX(salary) from employees
+
