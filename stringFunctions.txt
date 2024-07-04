@@ -62,3 +62,19 @@ SELECT LENGTH(TRIM('     Alright!    '))
 12) POSITION (Case Sensitive)
 SELECT POSITION('om' in 'Thoman')
 SELECT POSITION('OM' in 'Thoman')
+
+
+
+
+### EXERCISE
+1) "4:Suman:FINANCE"
+SELECT CONCAT_WS(':',emp_id,fname,UPPER(dept)) from (SELECT * from employees where emp_id = 4)
+SELECT CONCAT_WS(':',emp_id,fname,UPPER(dept)) from employees where emp_id = 4
+
+
+2) I1 Raj
+SELECT CONCAT(LEFT(dept,1), CONCAT_WS(' ',emp_id, fname)) from employees
+
+
+3) How to see only 3 records from a table?
+select * from employees LIMIT(3)
