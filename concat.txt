@@ -1,0 +1,64 @@
+CONCAT, CONCAT_WS
+SUBSTR
+REPLACE
+REVERSE
+LENGTH
+LEFT, RIGHT
+UPPER, LOWER
+TRIM, LTRIM, RTRIM
+POSITION
+
+
+
+1) CONCAT
+select CONCAT('Hello','World')
+select CONCAT(fname,lname) AS FullName from employees
+select emp_id, CONCAT(fname,lname) AS FullName, dept from employees
+
+
+2) CONCAT_WS => CONCAT with SEPERATOR
+    CONCAT(Seperator,WORD1,WORD2,WORD3............)
+select CONCAT_WS('**','NAZIL','DHALWALA','NISHAR')
+select emp_id, CONCAT_WS(' ', fname, lname) AS fullname from employees
+select emp_id, CONCAT_WS(' ', fname, lname, salary) AS fullname from employees
+
+
+3) SUBSTR
+select SUBSTR('HELLO WORLD!,1,6)      // H E L L O 
+                                         1 2 3 4 5 6
+
+
+4) REPLACE(STR_TO_PERFORM_OPR, from_str, to_str)
+select REPLACE('NAZIL','NA','BRA') // output => BRAZIL
+
+
+5) REVERSE(str)
+select REVERSE("Hello") from employees
+select REVERSE(fname) from employees
+
+
+6) LENGTH - Gives no. of characters
+select LENGTH('hello')
+select LENGTH(fname) from employees
+select * from employees where length(fname) > 5;
+
+
+7) UPPER => does the upper case (UPPERCASE)
+SELECT UPPER(fname) from employees
+
+8) LOWER => does the lower case (lowercase)
+SELECT LOWER(fname) from employees
+
+9) LEFT => How much character U want from left
+SELECT LEFT('Hello World',4) // Ouptut => Hell
+
+10) RIGHT => How much character U want from RIGHT
+SELECT RIGHT('Hello World',5) // Ouptut => World
+
+11) TRIM
+SELECT TRIM('     Alright!    ')
+SELECT LENGTH(TRIM('     Alright!    '))
+
+12) POSITION (Case Sensitive)
+SELECT POSITION('om' in 'Thoman')
+SELECT POSITION('OM' in 'Thoman')
