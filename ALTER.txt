@@ -1,0 +1,37 @@
+ALTER => For Doing modification in Table
+
+
+1) Add column "AGE" in person table
+ALTER TABLE person
+ADD COLUMN age INT
+
+2) DELETE column "AGE" in person table
+ALTER TABLE person
+DROP COLUMN age INT
+
+
+3) RENAME column name to fname
+ALTER TABLE person
+rename column name to fname;
+
+4) Rename Table
+ALTER TABLE person
+rename to myperson
+
+
+5) Modification of dataType
+ALTER table person
+alter column fname
+set data type VARCHAR(200)
+
+
+6) To add default constraint
+ALTER TABLE person
+ALTER column city
+set default 'ZameenKeUpper'
+
+
+7) To remove default constraint
+ALTER TABLE person
+ALTER column city
+set default 'ZameenKeUpper'
